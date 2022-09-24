@@ -1,2 +1,7 @@
-package own;public class NoElementFoundException {
+package own;
+
+class NoElementFoundException extends Exception{
+    public NoElementFoundException(String message) {
+        super(message);
+    }
 }

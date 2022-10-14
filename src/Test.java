@@ -21,9 +21,9 @@ public class Test {
 
             } catch (InputMismatchException e)  {
                 System.err.println("Podana wartość nie jest liczbą całkowitą. Spróbuj ponownie");
-                sc.nextLine();
             } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println("Miało być 1 lub 2. Spróbuj ponownie");
+            } finally {
                 sc.nextLine();
             }
         } while (error);
